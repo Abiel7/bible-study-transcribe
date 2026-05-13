@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+
+# Run artifacts
+outputs/
+**/work/
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,26 @@
+[project]
+name = "bible-study-transcribe"
+version = "0.1.0"
+description = "Transcribe and summarize Tigrinya Bible study sessions with speaker diarization."
+readme = "README.md"
+authors = [
+    { name = "Abiel", email = "abiel.kidane@cegal.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.101.0",
+    "numpy>=1.26.4",
+    "omnilingual-asr>=0.2.0",
+    "pyannote-audio>=3.4.0",
+    "python-dotenv>=1.2.2",
+    "soundfile>=0.13.1",
+    "torch==2.8.0",
+    "torchaudio==2.8.0",
+]
+
+[project.scripts]
+bible-study-transcribe = "bible_study_transcribe.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
